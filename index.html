@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpiceWorld - Fresh Spices, Directly Sourced</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide-icons"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Linked to your style.css file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="my-assignment-project.html" class="text-3xl font-bold text-orange-600">
+                SpiceWorld 🌶️
+            </a>
+            <div class="hidden md:flex space-x-6">
+                <a href="my-assignment-project.html" class="text-gray-700 hover:text-orange-600 font-medium">Home</a>
+                <a href="my-assignment-project.html#products" class="text-gray-700 hover:text-orange-600 font-medium">Products</a>
+                <!-- Links pointing to the separate contact.html page -->
+                <a href="contactdetails.html" class="text-gray-700 hover:text-orange-600 font-medium">For Suppliers</a>
+                <a href="contactdetails.html" class="text-gray-700 hover:text-orange-600 font-medium">Contact Us</a>
+            </div>
+              <a href="checkoutpage.html" id="cart-icon" class="relative p-2 rounded-full hover:bg-gray-100 transition-transform duration-200">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+                <!-- ENSURED THIS IS 0 -->
+                <span id="cart-count" class="absolute top-0 right-0 block h-4 w-4 rounded-full bg-orange-600 text-white text-xs text-center">0</span>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-orange-500 text-white text-center p-16 md:p-24 hero-bg">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Fresh Spices, Directly Sourced</h1>
+            <p class="text-xl mb-8">From the best farms in the world, delivered to your kitchen.</p>
+            <a href="#products" class="bg-white text-orange-600 font-bold py-3 px-6 rounded-full text-lg hover:bg-gray-200 transition duration-300">
+                Shop Our Spices
+            </a>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="max-w-6xl mx-auto py-16 px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Our Premium Collection</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Product 1: Green Cardamom -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="images/Screenshot 2025-11-20 011942.png" alt="Green Cardamom Pods" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Green Cardamom</h3>
+                        <p class="text-gray-600 mb-4">Aromatic and perfect for sweets and chai.</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-2xl font-bold text-orange-600">RS.99.99</span>
+                            <span class="text-sm text-gray-500">/ 50g</span>
+                        </div>
+                        <button class="add-to-cart-btn w-full bg-orange-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-orange-700 transition duration-300" data-product-name="Green Cardamom">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 2: Smoked Chili Powder -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="images/Screenshot 2025-11-20 012108.png" alt="Smoked Chili" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Smoked Chili Powder</h3>
+                        <p class="text-gray-600 mb-4">Fiery heat with a deep, smoky flavor.</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-2xl font-bold text-orange-600">RS.650.49</span>
+                            <span class="text-sm text-gray-500">/ 100g</span>
+                        </div>
+                        <button class="add-to-cart-btn w-full bg-orange-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-orange-700 transition duration-300" data-product-name="Smoked Chili Powder">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 3: Ceylon Cinnamon -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="images/Screenshot 2025-11-20 012201.png" alt="Ceylon Cinnamon" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Ceylon Cinnamon</h3>
+                        <p class="text-gray-600 mb-4">True cinnamon sticks with sweet aroma.</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-2xl font-bold text-orange-600">RS.850.50</span>
+                            <span class="text-sm text-gray-500">/ 50g</span>
+                        </div>
+                        <button class="add-to-cart-btn w-full bg-orange-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-orange-700 transition duration-300" data-product-name="Ceylon Cinnamon">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 4: Black Peppercorns -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="images/Screenshot 2025-11-20 012230.png" alt="Black Peppercorns" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Black Peppercorns</h3>
+                        <p class="text-gray-600 mb-4">Whole peppercorns for fresh grinding.</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-2xl font-bold text-orange-600">RS.400.99</span>
+                            <span class="text-sm text-gray-500">/ 100g</span>
+                        </div>
+                        <button class="add-to-cart-btn w-full bg-orange-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-orange-700 transition duration-300" data-product-name="Black Peppercorns">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 5: Persian Saffron -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="images/Screenshot 2025-11-20 012310.png" alt="Premium Saffron" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Persian Saffron</h3>
+                        <p class="text-gray-600 mb-4">The world's most precious spice.</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-2xl font-bold text-orange-600">RS.240.99</span>
+                            <span class="text-sm text-gray-500">/ 2g</span>
+                        </div>
+                        <button class="add-to-cart-btn w-full bg-orange-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-orange-700 transition duration-300" data-product-name="Persian Saffron">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                                <!-- Product 6: Cloves (UPDATED PRICE) -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="images/Screenshot 2025-11-20 031453.png" alt="Whole Cloves" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Whole Cloves</h3>
+                        <p class="text-gray-600 mb-4">Aromatic flower buds, perfect for curries and teas.</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-2xl font-bold text-orange-600">RS.750.00</span>
+                            <span class="text-sm text-gray-500">/ 50g</span>
+                        </div>
+                        <button class="add-to-cart-btn w-full bg-orange-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-orange-700 transition duration-300" data-product-name="Whole Cloves">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 7: Cumin Seeds (UPDATED PRICE) -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="images/Screenshot 2025-11-20 031529.png" alt="Cumin Seeds" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Cumin Seeds</h3>
+                        <p class="text-gray-600 mb-4">Earthy, nutty, and essential for spice blends.</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-2xl font-bold text-orange-600">RS.350.00</span>
+                            <span class="text-sm text-gray-500">/ 100g</span>
+                        </div>
+                        <button class="add-to-cart-btn w-full bg-orange-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-orange-700 transition duration-300" data-product-name="Cumin Seeds">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 8: Star Anise (UPDATED PRICE) -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="images/Screenshot 2025-11-20 031556.png" alt="Star Anise" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Star Anise</h3>
+                        <p class="text-gray-600 mb-4">Distinct licorice flavor, key for soups and biryanis.</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-2xl font-bold text-orange-600">RS.850.00</span>
+                            <span class="text-sm text-gray-500">/ 50g</span>
+                        </div>
+                        <button class="add-to-cart-btn w-full bg-orange-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-orange-700 transition duration-300" data-product-name="Star Anise">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+
+        <!-- Suppliers Section (Links to Contact Page) -->
+        <section id="suppliers" class="bg-gray-800 text-white py-20 px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Are You a Spice Grower or Supplier?</h2>
+            <p class="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
+                We are always looking to partner with passionate farmers and suppliers who share our commitment to quality. 
+                If you grow or trade exceptional spices, we want to hear from you.
+            </p>
+            <a href="contactdetails.html" class="bg-white text-gray-800 font-bold py-3 px-6 rounded-full text-lg hover:bg-gray-200 transition duration-300">
+                Contact Our Sourcing Team
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Footer with Full Contact Details -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="mb-2">&copy; 2025 SpiceWorld. All rights reserved.</p>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8">
+                <p class="text-sm font-semibold text-gray-300 uppercase tracking-wider mb-4">Assignment By</p>
+                <h3 class="text-xl font-bold text-white mb-2">Sahan Madhaa Jayawardhana</h3>
+                <p class="text-gray-400">ID: 23FIS07111</p>
+                <div class="flex flex-col md:flex-row justify-center items-center gap-4 mt-4 text-sm">
+                    <p>
+                        <span class="text-orange-500 font-semibold">Email:</span> 
+                        <a href="mailto:sahanjayawardhana25@gmail.com" class="hover:text-white transition">sahanjayawardhana25@gmail.com</a>
+                    </p>
+                    <span class="hidden md:block text-gray-600">|</span>
+                    <p>
+                        <span class="text-orange-500 font-semibold">Phone:</span> 
+                        <a href="tel:0719116053" class="hover:text-white transition">0719116053</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white p-8 rounded-lg shadow-xl text-center max-w-sm mx-auto">
+            <h2 class="text-2xl font-bold text-green-600 mb-4">Success!</h2>
+            <p id="modal-message" class="text-gray-700 text-lg">Item added to your cart.</p>
+            <button id="close-modal-btn" class="mt-6 bg-orange-600 text-white font-semibold py-2 px-6 rounded-lg hover:bg-orange-700 transition duration-300">
+                OK
+            </button>
+        </div>
+    </div>
+<script src="script.js"></script>
+
+</body>
+</html>
